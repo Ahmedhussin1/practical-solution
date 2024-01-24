@@ -1,0 +1,18 @@
+*{
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  background-color: inherit;
+}
+:root {
+  --primary-color: #6b009c;
+  --secondary-color: #260036;
+  --yellow-color:#f69b11;
+  --text-color: #fffef9;
+  --secondary-text-color: #E5E4E2;
+}

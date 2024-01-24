@@ -1,0 +1,43 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https: //res.cloudinary.com/dotcom-prod/images/ar_16:9,c_fill,f_auto,g_faces:center,q_auto,w_768/v1/wt-cms-assets/2024/01/m1pbiwwoqtkuzpk5xbbw/welcometovmljan1hero.jpg');
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+.text{
+    color:#000;
+}

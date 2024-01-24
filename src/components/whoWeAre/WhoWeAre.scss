@@ -1,0 +1,68 @@
+.who-we-are-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.who-we-are-heading{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: space-between;    
+
+    h1{
+        font-size: 32px;
+        padding: 20px 0;
+        color: var(--text-color);
+    }
+    h2{
+        font-size: 32px;
+        padding: 20px 0;
+        color: var(--text-color);
+    }
+    p{
+        line-height: 2rem;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--secondary-text-color);
+    }
+}
+
+.what-we-do-container{
+    display: flex;
+    margin: 50px 0;
+    max-width: 1200px;
+    gap: 30px;
+    .what-we-do-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4{
+            padding: 10px 5px;
+            font-size: 18px;
+            color: var(--text-color);
+            background-color: var(--yellow-color);
+        }
+        p {
+            line-height: 1.6rem;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--secondary-text-color);
+        }
+    }
+}
+
+.who-we-are-break {
+    width: 100%;
+    max-width: 400px;
+    /* Set a maximum width for the line */
+    margin: 20px auto;
+    /* Center the line and adjust margin as needed */
+    border-top: 2px solid var(--yellow-color);
+}
+

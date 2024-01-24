@@ -1,0 +1,103 @@
+.container{
+    background: hsla(281, 100%, 31%, 1);
+    
+        background: linear-gradient(135deg,
+                hsla(281, 100%, 31%, 1) 0%,
+                hsla(280, 44%, 48%, 1) 50%,
+                hsla(282, 100%, 11%, 1) 100%);
+    
+        background: -moz-linear-gradient(135deg,
+                hsla(281, 100%, 31%, 1) 0%,
+                hsla(280, 44%, 48%, 1) 50%,
+                hsla(282, 100%, 11%, 1) 100%);
+    
+        background: -webkit-linear-gradient(135deg,
+                hsla(281, 100%, 31%, 1) 0%,
+                hsla(280, 44%, 48%, 1) 50%,
+                hsla(282, 100%, 11%, 1) 100%);
+    
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6B009C", endColorstr="#8D44B1", GradientType=1);
+}
+.hero-section{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    
+}
+.animation{
+    width: 300px;
+    height: 300px;
+}
+.header{
+    font-weight: 800;
+    font-size: 70px;
+    color: white;
+    line-height: 5.5rem;
+}
+span{
+    padding: 5px;
+    background-color: #68009e;
+}
+
+.header-swiper-section{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 100vh; */
+}
+.right{
+    flex: 1;
+    h6{
+        color: #68009e;
+        padding-bottom: 20px;
+        font-size: large;
+    }
+    h2{
+        color: aliceblue;
+        font-size: 40px;
+        font-weight: 800;
+        padding-bottom: 10px;
+    }
+    p{
+        color: darkgrey;
+        line-height: 1.3rem;
+    }
+}
+.left{
+    flex: 2;
+    /* overflow: hidden; */
+}
+
+.missing-puzzle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+    gap: 50px;
+    .right-puzzle{
+        flex: 1;
+        max-width: 500px;
+        img{
+            width: 100%;
+        }
+    }
+    .left-puzzle{
+        flex: 2;
+        text-align: left;
+        max-width: 500px;
+        h2{
+            color: #68009e;
+            font-size: xxx-large;
+            font-weight: 500;
+            padding-bottom: 30px;
+        }
+        p{
+            color: darkgrey;
+            line-height: 1.5rem;
+        }
+    }
+}
