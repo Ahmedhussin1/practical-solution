@@ -5,7 +5,7 @@ function Navbar() {
     <div className="navbar">
       {/* logo section */}
       <div className="logo-section">
-        <img src="../assets/logo-png.png" />
+        <img src="../../dist/assets/logo-png.png" />
       </div>
 
       <div className="link-section">

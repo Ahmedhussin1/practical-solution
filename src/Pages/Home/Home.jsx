@@ -28,13 +28,14 @@ function Home() {
           <Lottie className="animation" animationData={animationData} />
         </div>
       </div>
+      <MainHeader sectionName={"Who Are WE"} header={"A Little About Us"} link={"#"} />
 
       <div>
         <WhoWeAre />
       </div>
-      <MainHeader sectionName={'Services'} header={"OUR SERVICES"}/>
+      <MainHeader sectionName={"Our Work"} header={"Some Of Our Recent Work"} />
       <div>
-        <SecondCards cardData={SecondCardData}/>
+        <SecondCards cardData={SecondCardData} />
       </div>
 
       {/* image slider and header section */}
