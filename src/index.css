@@ -1,3 +1,5 @@
+
+
 *{
   font-family: 'Chakra Petch', sans-serif;
   font-family: 'Montserrat', sans-serif;
@@ -6,7 +8,7 @@
   box-sizing: border-box;
 }
 body{
-  background: hsla(281, 100%, 31%, 1);
+  /* background: hsla(281, 100%, 31%, 1);
   
     background: linear-gradient(135deg,
         hsla(281, 100%, 31%, 1) 0%,
@@ -23,7 +25,8 @@ body{
         hsla(280, 44%, 48%, 1) 50%,
         hsla(282, 100%, 11%, 1) 100%);
   
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6B009C", endColorstr="#8D44B1", GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6B009C", endColorstr="#8D44B1", GradientType=1); */
+    background-color: #17202c;
 }
 a{
   text-decoration: none;

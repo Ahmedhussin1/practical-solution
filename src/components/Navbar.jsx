@@ -13,6 +13,9 @@ function Navbar() {
           <a href="/">
             <li>Home</li>
           </a>
+          <a href="/landing-page">
+            <li>Landing Page</li>
+          </a>
           <a href="/about">
             <li>About</li>
           </a>

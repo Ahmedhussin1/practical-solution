@@ -1,0 +1,215 @@
+.main {
+    margin: 0 auto;
+    max-width: 1200px; // Adjust the maximum width as needed
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    justify-content: center;
+}
+
+.cards_item {
+    width: calc(45.33% - 20px); // Adjust the width and margin as needed
+    margin-bottom: 20px;
+}
+
+.card_image {
+    max-height: 350px;
+    margin-top: -24px;
+
+    img {
+        width: 100%;
+        max-width: 100%; // Adjust as needed
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top: -100px;
+        background: linear-gradient(0deg, #091014 0%, rgba(0, 0, 0, 0.5) 100%);
+    }
+}
+
+.card {
+    background-color: #091014;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 50px 20px;
+    z-index: 1;
+    display: block;
+}
+
+.card_title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: -25px;
+    margin-bottom: 12px;
+    text-shadow: black 1px 0 15px;
+    color: white;
+}
+
+.card_text {
+    color: #DDDACB;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    padding: 20px 0px;
+    p {
+        max-width: 100%; // Adjust as needed
+    }
+}
+
+.card_price {
+    position: relative;
+    top: 10px;
+    right: 16px;
+    text-align: right;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: black 3px 0px 6px;
+}
+
+#item_fig .card:after {
+    content: "Seasonal";
+    font-family: "Raleway", sans-serif;
+    color: rgba(234, 225, 175, 0.8);
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    width: 10ch;
+    height: 1.5em;
+    padding: 0.2em 0.4em;
+    position: relative;
+    bottom: calc(100% - 2.5em);
+    left: 1em;
+}
+
+.button-container {
+    padding-bottom:20px;
+    padding-left: 20px;
+}
+// .main {
+//     margin: 0 auto;
+// }
+
+// .cards {
+//     // display: flex;
+//     flex-wrap: wrap;
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .cards_item {
+//     display: flex;
+//     // flex: 1;
+//     padding: 1rem;
+//     max-width: 800px;
+//     margin: 0 auto;
+// }
+
+// .card_image {
+//     max-height: 350px;
+//     margin-top: -24px;
+
+//     img {
+//         width: 100%;
+//         max-width: 800px;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+
+//     &:after {
+//         content: "";
+//         display: block;
+//         width: 100%;
+//         height: 100px;
+//         position: relative;
+//         top: -100px;
+//         background: linear-gradient(0deg, #091014 10%, rgba(0, 0, 0, 0) 100%);
+//     }
+// }
+
+// .card {
+//     background-color: #091014;
+//     border-radius: 0.25rem;
+//     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+//     display: flex;
+//     flex-direction: column;
+//     overflow: hidden;
+// }
+
+// .card_content {
+//     padding: 1rem;
+//     z-index: 1;
+//     display: block;
+// }
+
+// .card_title {
+//     font-size: 72px;
+//     line-height: 72px;
+//     margin-top: -50px;
+//     margin-bottom: 24px;
+//     text-shadow: black 1px 0 15px;
+//     color: white;
+// }
+
+// .card_text {
+//     color: #DDDACB;
+//     font-family: 'Raleway', sans-serif;
+//     font-weight: 200;
+
+//     p {
+//         max-width: 700px;
+//     }
+// }
+
+// .card_price {
+//     position: relative;
+//     top: 10px;
+//     right: 16px;
+//     text-align: right;
+//     color: white;
+//     font-family: "Raleway", sans-serif;
+//     height: 24px;
+//     font-size: 36px;
+//     font-weight: 400;
+//     text-shadow: black 3px 0px 6px;
+// }
+
+// #item_fig .card:after {
+//     content: "Seasonal";
+//     font-family: "Raleway", sans-serif;
+//     color: rgba(234, 225, 175, 0.8);
+//     font-weight: 600;
+//     // font-style: italic;
+//     text-transform: uppercase;
+//     display: block;
+//     width: 10ch;
+//     height: 1.5em;
+//     padding: 0.2em 0.4em;
+//     position: relative;
+//     bottom: calc(100% - 2.5em);
+//     left: 1em;
+// }
+// .button-container{
+//     padding: 20px 20px;
+// }

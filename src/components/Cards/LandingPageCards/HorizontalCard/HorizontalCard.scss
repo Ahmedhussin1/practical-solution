@@ -1,0 +1,60 @@
+.horizontal-cards-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.horizontal-card-container {
+    height: 300;
+    display: flex;
+    align-items: center; // Center items vertically
+    justify-content: space-between;
+    &:nth-child(odd) {
+        order: 2;
+        flex-direction: row-reverse; // Set the order for the nth child
+    }
+    border: 1px solid #787b8e;
+    background-color: #1c2735;
+    
+}
+
+.horizontal-img-container {
+    max-width: 400px; // Set the maximum width of the image container
+    // margin-right: 20px; 
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
+.horizontal-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.horizontal-text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 20px;
+    h1{
+        color: var(--text-color);
+    } // Allow text container to take remaining space
+    p{
+        color: var(--secondary-text-color);
+    }
+}
+
+// Add additional styling for text and button if needed
+.horizontal-text-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.horizontal-text-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
