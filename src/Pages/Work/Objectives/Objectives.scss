@@ -1,0 +1,49 @@
+.objectives-section{
+    background-color:#1c2735;
+    margin-bottom: 100px;
+    padding: 100px;
+}
+.objectives-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.objectives-title{
+    text-align: center;
+    h1{
+        color: var(--yellow-color);
+        font-size: 50px;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+}
+.objectives-desc{
+    width: 500px;
+    text-align: center;
+    p{
+        color: var(--secondary-text-color);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.4em;
+        padding-bottom: 50px;
+    }
+}
+
+.objectives-list{
+    width: 500px;
+    ul{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    li{
+        color: var(--secondary-text-color);
+        margin-bottom: 15px;
+        font-size: 18;
+        font-weight: 700;
+    }
+}

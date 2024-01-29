@@ -78,3 +78,40 @@
 .second-cards-section{
     margin-top: 100px;
 }
+
+.our-clients-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+
+        ". . one two . ."
+        ". . three four . .";
+}
+
+.landing-page-div1 {
+    grid-area: one;
+    border: 1px solid #1c2735;
+    cursor: pointer;
+}
+
+.landing-page-div2 {
+    grid-area: two;
+    border: 1px solid #1c2735;
+    cursor: pointer;
+}
+
+.landing-page-div3 {
+    grid-area: three;
+    border: 1px solid #1c2735;
+    cursor: pointer;
+}
+
+.landing-page-div4 {
+    grid-area: four;
+    border: 1px solid #1c2735;
+    cursor: pointer;
+}

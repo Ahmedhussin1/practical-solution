@@ -24,7 +24,7 @@ function GridCard() {
             <h2>London</h2>
             <p>Big Ben</p>
             <div>
-              <FourthButton title={"Learn More"} link={"#"} />
+              <FourthButton title={"Case study"} link={"#"} />
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ function GridCard() {
             <h2>London</h2>
             <p>Big Ben</p>
             <div>
-              <FourthButton title={"Learn More"} link={"#"} />
+              <FourthButton title={"Case study"} link={"#"} />
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ function GridCard() {
             <h2>London</h2>
             <p>Big Ben</p>
             <div>
-              <FourthButton title={"Learn More"} link={"#"} />
+              <FourthButton title={"Case study"} link={"#"} />
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@ function GridCard() {
             <h2>London</h2>
             <p>Big Ben</p>
             <div>
-              <FourthButton title={"Learn More"} link={"#"} />
+              <FourthButton title={"Case study"} link={"#"} />
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ function GridCard() {
             <h2>London</h2>
             <p>Big Ben</p>
             <div>
-              <FourthButton title={"Learn More"} link={"#"} />
+              <FourthButton title={"Case study"} link={"#"} />
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ function GridCard() {
             <h2>London</h2>
             <p>Big Ben</p>
             <div>
-              <FourthButton title={"Learn More"} link={"#"} />
+              <FourthButton title={"Case study"} link={"#"} />
             </div>
           </div>
         </div>

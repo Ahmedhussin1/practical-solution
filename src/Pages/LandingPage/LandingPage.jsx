@@ -1,16 +1,9 @@
 import LandingPageCardData from "../../Data/LandingPageCardData";
-import FirstCard from "../../components/Cards/FirstCard/FirstCard";
-import FirstCards from "../../components/Cards/FirstCard/FirstCards";
-import Horizantal from "../../components/Cards/LandingPageCards/HorizontalCard/Horizantal";
 import HorizontalCards from "../../components/Cards/LandingPageCards/HorizontalCard/HorizontalCards";
-import LandingPageCard from "../../components/Cards/LandingPageCards/LandingPageCard";
 import LandingPageCards from "../../components/Cards/LandingPageCards/LandingPageCards";
-import SevenCard from "../../components/Cards/sevenCard/SevenCard";
 import "./LandingPage.scss";
 import HorizantalCardData from "../../Data/HorizontalCardData";
 import GridCard from "../../components/Cards/LandingPageCards/GirdCards/GridCard";
-import FourthButton from "../../components/Buttons/Btn-4/FourthButton";
-import { IoMdArrowDropright } from "react-icons/io";
 import MainHeader from "../../components/Headers/MainHeader/MainHeader";
 
 function LandingPage() {
@@ -73,7 +66,7 @@ function LandingPage() {
       </div>
 
       {/* sections divider */}
-      <MainHeader number={"02"} title={"Services"} header={"Our Services"} />
+      <MainHeader number={"02"} title={"Services"} header={"How we do it"} />
 
       {/* Horizontal Cards services */}
       <div>
@@ -150,6 +143,8 @@ function LandingPage() {
           <img src="https://websitedemos.net/marketing-agency-02/wp-content/uploads/sites/725/2020/11/logo-005-free-img.png" />
         </div>
       </div>
+
+      <MainHeader number={"06"} title={"Contact"} header={"Talk to us"} />
     </div>
   );
 }
