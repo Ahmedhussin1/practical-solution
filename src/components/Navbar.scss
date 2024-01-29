@@ -85,6 +85,9 @@
 //     }
 // }
 
+
+
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -109,7 +112,7 @@
         img {
             max-width: 100px;
             height: 70px;
-            transition: max-width 0.5s ease;
+            transition: max-width 0.5s ease, height 0.5s ease;
             /* Added transition for the logo */
         }
     }
@@ -184,3 +187,61 @@
         }
     }
 }
+.mobile-menu {
+    display: none;
+    /* Initially hidden for desktop */
+    cursor: pointer;
+
+    .bar {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+}
+.change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+@media only screen and (max-width: 767px) {
+    .link-section {
+        display: none;
+        /* Hide links by default for mobile view */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Adjust top position based on your design */
+        left: 0;
+        width: 100%;
+        background-color: #1c2735;
+        z-index: 1;
+    }
+
+    .link-section.show {
+        display: flex;
+    }
+
+    .link-section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-section ul li {
+        margin: 10px 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+
+

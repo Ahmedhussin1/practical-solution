@@ -5,6 +5,7 @@ import "./LandingPage.scss";
 import HorizantalCardData from "../../Data/HorizontalCardData";
 import GridCard from "../../components/Cards/LandingPageCards/GirdCards/GridCard";
 import MainHeader from "../../components/Headers/MainHeader/MainHeader";
+import ContactUsBanner from "../../components/Contact us Banner/ContactUsBanner";
 
 function LandingPage() {
   const card1 = {
@@ -145,6 +146,7 @@ function LandingPage() {
       </div>
 
       <MainHeader number={"06"} title={"Contact"} header={"Talk to us"} />
+      <ContactUsBanner/>
     </div>
   );
 }

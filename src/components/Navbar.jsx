@@ -1,17 +1,14 @@
 import './Navbar.scss'
 import React, { useEffect, useState } from "react";
-
-// import { CiSearch } from "react-icons/ci";
 function Navbar() {
   const [isFixed, setIsFixed] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-
       // Set a threshold value based on your design
       const threshold = 100;
-
       setIsFixed(scrollTop > threshold);
     };
 
@@ -21,6 +18,10 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <div className={`navbar ${isFixed ? "fixed" : ""}`}>
@@ -48,6 +49,15 @@ function Navbar() {
           </a>
           {/* <a href='#'><li>Contact</li></a> */}
         </ul>
+      </div>
+
+      <div
+        className={`mobile-menu ${isMobileMenuOpen ? "change" : ""}`}
+        onClick={toggleMobileMenu}
+      >
+        <div className="bar" />
+        <div className="bar" />
+        <div className="bar" />
       </div>
 
       <a href="/contact" className="btn btn-1">
