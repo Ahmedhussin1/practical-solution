@@ -3,6 +3,7 @@ import './Seo.scss'
 import ServicesImageSectionLeft from '../Single service page components/Left image section/ServicesImageSectionLeft'
 import SingleServiceRightImage from '../Single service page components/Right image section/SingleServiceRightImage'
 import SuccessfulClient from '../Single service page components/successful Clients section/SuccessfulClient'
+import Tactics from '../Single service page components/Tactics Section/Tactics'
 function SeoPage() {
   return (
     <div className='seo-container'>
@@ -14,6 +15,8 @@ function SeoPage() {
         <SingleServiceRightImage/>
         {/* successful client section */}
         <SuccessfulClient/>
+        {/* tactics section */}
+        <Tactics/>
     </div>
   )
 }

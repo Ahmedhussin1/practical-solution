@@ -1,0 +1,32 @@
+.tactics-container{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    gap: 100px;
+    margin: 200px 0;
+}
+.tactics-header{
+    h1{
+        font-size: 57px;
+        font-weight: 800;
+        color: var(--text-color);
+    }
+}
+.tactics-used{
+    display: flex;
+    // justify-content: space-around;
+    align-items: center;
+    ul{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       row-gap: 20px;
+       column-gap: 100px;
+        li{
+            list-style: disc;
+            color: var(--secondary-text-color);
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
