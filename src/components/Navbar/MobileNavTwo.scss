@@ -1,0 +1,208 @@
+.Header {
+    position: fixed;
+    top: 0;
+    /* Stick it to the top */
+    max-height: 70px;
+    width: 100vw;
+
+    display: grid;
+    grid-template-areas: "logo nav";
+
+    /* Cosmetics */
+    background-color: #2e0249;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Logo {
+    grid-area: logo;
+    height: 70px;
+}
+
+.Nav {
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Nav a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.Nav a:hover {
+    transform: scale(1.1);
+}
+
+// .Nav button {
+//     padding: 10px;
+//     outline: none;
+//     border: none;
+//     font-size: 20px;
+//     color: #fff;
+//     font-weight: 600;
+//     background-color: #411530;
+//     box-shadow: 0px 5px 0px 0px rgba(26, 24, 24, 0.25);
+//     border-radius: 10px;
+//     cursor: pointer;
+//     transition: 70ms;
+// }
+
+// .Nav button:active {
+//     transform: translateY(3px);
+//     box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
+// }
+.btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 45px;
+    margin: 0 0;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-1 {
+    font-weight: 300;
+
+    svg {
+        height: 45px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    rect {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-dasharray: 422, 0;
+        transition: all 0.35s linear;
+    }
+}
+
+.btn-1:hover {
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    rect {
+        stroke-width: 5;
+        stroke-dasharray: 15, 310;
+        stroke-dashoffset: 48;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+
+.Burger {
+    display: none;
+    grid-area: burger;
+    margin: 0 20px 0 0;
+    padding: 0;
+    justify-self: end;
+    font-size: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.1s;
+}
+
+.Burger:active {
+    transform: scale(1.2);
+}
+
+@media (max-width: 700px) {
+    .Header {
+        grid-template-areas: "logo burger" "nav nav";
+    }
+
+    .Nav {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: none;
+        grid-row-gap: 20px;
+
+        padding: 30px 0 30px;
+        background: rgba(40, 44, 47, 0.95);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .Burger {
+        display: inline;
+    }
+}
+
+.NavAnimation-enter {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.NavAnimation-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 350ms, transform 350ms;
+}
+
+.NavAnimation-exit {
+    opacity: 1;
+}
+
+.NavAnimation-exit-active {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 350ms, transform 350ms;
+}
+
+.Footer {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.Navfooter {
+    display: grid;
+    grid-area: Navfooter;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Navfooter a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.Navfooter a:hover {
+    transform: scale(1.1);
+}
+
+.Navfooter button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #f57328;
+    box-shadow: 0px 5px 0px 0px rgba(255, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 70ms;
+}
+
+.Navfooter button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
+}

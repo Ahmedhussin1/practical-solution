@@ -1,4 +1,7 @@
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 50px;
     height: 50px;
     text-align: center;
@@ -7,7 +10,7 @@
 
     a {
         text-decoration: none;
-        color:black;
+        color:var(--text-color);
     }
     span{
         background-color: transparent;

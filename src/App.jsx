@@ -8,11 +8,14 @@ import LandingPage from "./Pages/LandingPage/LandingPage";
 import Work from './Pages/Rimini/Work'
 import WorkCards from "./Work Cards Page/WorkCards";
 import WorkCopy from "./Pages/Novinci/WorkCopy";
+import MobileNavTwo from "./components/Navbar/MobileNavTwo";
+import ServicesPage from "./Pages/Services page/ServicesPage";
 
 function App() {
   return (
     <main>
       <Navbar />
+      {/* <MobileNavTwo/> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,6 +24,7 @@ function App() {
           <Route path="/work" element={<WorkCards />}></Route>
           <Route path="/work/rimini" element={<Work />} />
           <Route path="/work/novinci" element={<WorkCopy />} />
+          <Route path="/services" element={<ServicesPage/>}/>
         </Routes>
       </BrowserRouter>
       <Footer />
