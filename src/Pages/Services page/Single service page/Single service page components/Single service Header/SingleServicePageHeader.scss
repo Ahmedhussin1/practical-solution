@@ -1,0 +1,25 @@
+.single-service-page-header{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    margin: 150px 0;
+}
+.single-service-page-header-title{
+    h1{
+        text-align: center;
+        font-size: 88px;
+        font-weight: 800;
+        color: var(--text-color);
+    }
+}
+.single-service-page-header-desc{
+    p{
+        text-align: center;
+        font-size:23px;
+        font-weight: 400;
+        color: var(--secondary-text-color);
+    }
+}

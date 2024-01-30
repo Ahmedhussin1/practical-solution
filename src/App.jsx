@@ -10,7 +10,7 @@ import WorkCards from "./Work Cards Page/WorkCards";
 import WorkCopy from "./Pages/Novinci/WorkCopy";
 import MobileNavTwo from "./components/Navbar/MobileNavTwo";
 import ServicesPage from "./Pages/Services page/ServicesPage";
-
+import SeoPage from "./Pages/Services page/Single service page/SEO/SeoPage";
 function App() {
   return (
     <main>
@@ -25,6 +25,7 @@ function App() {
           <Route path="/work/rimini" element={<Work />} />
           <Route path="/work/novinci" element={<WorkCopy />} />
           <Route path="/services" element={<ServicesPage/>}/>
+          <Route path="/services/seo" element={<SeoPage/>}/>
         </Routes>
       </BrowserRouter>
       <Footer />
