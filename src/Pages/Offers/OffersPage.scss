@@ -1,0 +1,42 @@
+.offers-hero-section {
+    background-image: url('../../../dist/assets/bg-06-free-img.jpg');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+
+    .offers-hero-section-header {
+        h1 {
+            color: var(--text-color);
+            font-size: 110px;
+            font-weight: 700;
+            letter-spacing: normal;
+        }
+    }
+
+    .offers-hero-section-text {
+        width: 150px;
+
+        p {
+            color: var(--secondary-text-color);
+        }
+    }
+
+    .offers-hero-section-span {
+        width: 10%;
+
+        span {
+            display: block;
+            width: 100%;
+            // border-bottom: 1px solid #000;
+            background-color: var(--text-color);
+        }
+    }
+}
+.horizontal-line{
+    width: 100%;
+    height: .01rem;
+    border: none;
+    background-color: #2F3742;
+}

@@ -14,6 +14,7 @@ import SeoPage from "./Pages/Services page/Single service page/SEO/SeoPage";
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
 import SemPage from "./Pages/Services page/Single service page/SEM/SemPage";
+import OffersPage from "./Pages/Offers/OffersPage";
 function App() {
   return (
     <MantineProvider>
@@ -23,6 +24,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/offers" element={<OffersPage/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/landing-page" element={<LandingPage />} />
             <Route path="/work" element={<WorkCards />}></Route>

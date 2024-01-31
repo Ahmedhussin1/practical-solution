@@ -8,9 +8,7 @@ function SingleServicePageHeader({data}) {
           <h1>{data.header.title}</h1>
         </div>
         <div className="single-service-page-header-desc">
-          <p>
-            {data.header.desc}
-          </p>
+          <p>{data.header.desc}</p>
         </div>
         <div className="single-service-page-header-btn">
           {/* <SixButton title={"EXPLORE"} link={"#"} /> */}
