@@ -1,16 +1,14 @@
-import React from 'react'
 import './Tactics.scss'
-import SEO from '../../SEO/Seo';
 
-function Tactics() {
+function Tactics({data}) {
   return (
     <div className='tactics-container'>
       <div className='tactics-header'>
-        <h1>{SEO.tactics.title}</h1>
+        <h1>{data.tactics.title}</h1>
       </div>
       <div className='tactics-used'>
         <ul>
-            {SEO.tactics.tactics.map((tactic,index)=>(
+            {data.tactics.tactics.map((tactic,index)=>(
                 <li key={index}>{tactic}</li>
             ))}
         </ul>

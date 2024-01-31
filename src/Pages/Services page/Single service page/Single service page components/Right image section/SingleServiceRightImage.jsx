@@ -3,7 +3,7 @@ import FourthButton from "../../../../../components/Buttons/Btn-4/FourthButton";
 import  { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import "./SingleServiceRightImage.scss";
-function SingleServiceRightImage() {
+function SingleServiceRightImage({data}) {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -38,17 +38,17 @@ function SingleServiceRightImage() {
       className="single-service-right-container"
     >
       <div className="single-service-left-img">
-        <img src={SEO.imgDataRight.img} />
+        <img src={data.imgDataRight.img} />
       </div>
       <div className="single-service-right-data">
         <div className="single-service-right-title">
-          <h1>{SEO.imgDataRight.title}</h1>
+          <h1>{data.imgDataRight.title}</h1>
         </div>
         <div className="single-service-right-subtitle">
-          <h2>{SEO.imgDataRight.subtitle}</h2>
+          <h2>{data.imgDataRight.subtitle}</h2>
         </div>
         <div className="single-service-right-desc">
-          <p>{SEO.imgDataRight.desc}</p>
+          <p>{data.imgDataRight.desc}</p>
         </div>
         <div className="single-service-right-btn">
           <FourthButton title={"SEE OUR RESULTS"} link={"/contact"} />

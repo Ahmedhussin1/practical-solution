@@ -11,25 +11,31 @@ import WorkCopy from "./Pages/Novinci/WorkCopy";
 import MobileNavTwo from "./components/Navbar/MobileNavTwo";
 import ServicesPage from "./Pages/Services page/ServicesPage";
 import SeoPage from "./Pages/Services page/Single service page/SEO/SeoPage";
+import "@mantine/core/styles.css";
+import { MantineProvider } from "@mantine/core";
+import SemPage from "./Pages/Services page/Single service page/SEM/SemPage";
 function App() {
   return (
-    <main>
-      <Navbar />
-      {/* <MobileNavTwo/> */}
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/landing-page" element={<LandingPage />} />
-          <Route path="/work" element={<WorkCards />}></Route>
-          <Route path="/work/rimini" element={<Work />} />
-          <Route path="/work/novinci" element={<WorkCopy />} />
-          <Route path="/services" element={<ServicesPage/>}/>
-          <Route path="/services/seo" element={<SeoPage/>}/>
-        </Routes>
-      </BrowserRouter>
-      <Footer />
-    </main>
+    <MantineProvider>
+      <main>
+        <Navbar />
+        {/* <MobileNavTwo/> */}
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/landing-page" element={<LandingPage />} />
+            <Route path="/work" element={<WorkCards />}></Route>
+            <Route path="/work/rimini" element={<Work />} />
+            <Route path="/work/novinci" element={<WorkCopy />} />
+            <Route path="/services" element={<ServicesPage/>}/>
+            <Route path="/services/seo" element={<SeoPage/>}/>
+            <Route path="/services/sem/ppc" element={<SemPage/>}/>
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+      </main>
+    </MantineProvider>
   );
 }
 

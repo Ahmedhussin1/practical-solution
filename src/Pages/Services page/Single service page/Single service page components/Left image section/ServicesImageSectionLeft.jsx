@@ -3,7 +3,7 @@ import SEO from '../../SEO/Seo';
 import FourthButton from '../../../../../components/Buttons/Btn-4/FourthButton';
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-function ServicesImageSectionLeft() {
+function ServicesImageSectionLeft({data}) {
     const controls = useAnimation();
 
     useEffect(() => {
@@ -38,17 +38,17 @@ function ServicesImageSectionLeft() {
       className="single-service-left-container"
     >
       <div className="single-service-left-img">
-        <img src={SEO.imgDataLeft.img} />
+        <img src={data.imgDataLeft.img} />
       </div>
       <div className="single-service-right-data">
         <div className="single-service-right-title">
-          <h1>{SEO.imgDataLeft.title}</h1>
+          <h1>{data.imgDataLeft.title}</h1>
         </div>
         <div className="single-service-right-subtitle">
-          <h2>{SEO.imgDataLeft.subtitle}</h2>
+          <h2>{data.imgDataLeft.subtitle}</h2>
         </div>
         <div className="single-service-right-desc">
-          <p>{SEO.imgDataLeft.desc}</p>
+          <p>{data.imgDataLeft.desc}</p>
         </div>
         <div className="single-service-right-btn">
           <FourthButton title={"TALK TO US"} link={"/contact"} />
