@@ -43,7 +43,7 @@ function OffersPage() {
         header={"Platform integration"}
       />
       <hr className="horizontal-line" />
-      <OffersCards cardData={offersData.firstSection} />
+      <OffersCards cardData={offersData.secondSection} />
       <MainHeader
         number={"03"}
         title={"Data Science"}

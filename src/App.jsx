@@ -15,6 +15,7 @@ import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
 import SemPage from "./Pages/Services page/Single service page/SEM/SemPage";
 import OffersPage from "./Pages/Offers/OffersPage";
+import Contact from "./Pages/Contact/Contact";
 function App() {
   return (
     <MantineProvider>
@@ -23,10 +24,11 @@ function App() {
         {/* <MobileNavTwo/> */}
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<LandingPage />} />
             <Route path="/offers" element={<OffersPage/>}/>
             <Route path="/about" element={<About />} />
-            <Route path="/landing-page" element={<LandingPage />} />
+            <Route path="/contact" element={<Contact/>}/>
+            {/* <Route path="/landing-page" element={<LandingPage />} /> */}
             <Route path="/work" element={<WorkCards />}></Route>
             <Route path="/work/rimini" element={<Work />} />
             <Route path="/work/novinci" element={<WorkCopy />} />

@@ -35,17 +35,20 @@ function Navbar() {
           <a href="/">
             <li>Home</li>
           </a>
-          <a href="/landing-page">
-            <li>Landing Page</li>
+          <a href="/offers">
+            <li>Offers</li>
           </a>
-          <a href="/about">
-            <li>About</li>
+          <a href="/work">
+            <li>Work</li>
           </a>
           <a href="/services">
             <li>Services</li>
           </a>
-          <a href="/work">
-            <li>Work</li>
+          <a href="/contact">
+            <li>Contact</li>
+          </a>
+          <a href="/about">
+            <li>About</li>
           </a>
           {/* <a href='#'><li>Contact</li></a> */}
         </ul>
