@@ -27,7 +27,7 @@ function Navbar() {
     <div className={`navbar ${isFixed ? "fixed" : ""}`}>
       {/* logo section */}
       <div className="logo-section">
-        <img src="../../dist/assets/logo-png.png" />
+        <img src="p" />
       </div>
 
       <div className="link-section">

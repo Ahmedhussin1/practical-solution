@@ -29,17 +29,24 @@ const SEO = {
   },
   tactics: {
     title:`Organic SEO Tactics We Deploy:`,
-    tactics:['UI/UX audit for SEO','Site architecture','Backlink analysis','Competitive analysis','Search Console setup','Content intent analysis','Keyword research'
-,'Competitor analysis',
-'Metadata optimization',
-'Internal linking audit',
-'Link building',
-'Site copy updates','Image optimization',
-'Schema markup',
-'Local listings management',
-'Ongoing tracking and goal setup',
-'SEO Reporting',
-'Content strategy development',]
+    tactics:[
+    'UI/UX audit for SEO'
+    ,'Site architecture',
+    'Backlink analysis',
+    'Competitive analysis',
+    'Search Console setup',
+    'Content intent analysis',
+    'Keyword research'
+    ,'Competitor analysis',
+    'Metadata optimization',
+    'Internal linking audit',
+    'Link building',
+    'Site copy updates','Image optimization',
+    'Schema markup',
+    'Local listings management',
+    'Ongoing tracking and goal setup',
+    'SEO Reporting',
+    'Content strategy development',]
   }
 };
 export default SEO;

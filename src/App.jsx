@@ -16,11 +16,13 @@ import { MantineProvider } from "@mantine/core";
 import SemPage from "./Pages/Services page/Single service page/SEM/SemPage";
 import OffersPage from "./Pages/Offers/OffersPage";
 import Contact from "./Pages/Contact/Contact";
+import ResNavbar from './components/Navbar/ResNavbar'
 function App() {
   return (
     <MantineProvider>
       <main>
-        <Navbar />
+        {/* <Navbar /> */}
+        <ResNavbar/>
         {/* <MobileNavTwo/> */}
         <BrowserRouter>
           <Routes>

@@ -1,59 +1,6 @@
-.landing-container{
-    // background: hsla(281, 100%, 31%, 1);
-    
-    //     background: linear-gradient(135deg,
-    //             hsla(281, 100%, 31%, 1) 0%,
-    //             hsla(280, 44%, 48%, 1) 50%,
-    //             hsla(282, 100%, 11%, 1) 100%);
-    
-    //     background: -moz-linear-gradient(135deg,
-    //             hsla(281, 100%, 31%, 1) 0%,
-    //             hsla(280, 44%, 48%, 1) 50%,
-    //             hsla(282, 100%, 11%, 1) 100%);
-    
-    //     background: -webkit-linear-gradient(135deg,
-    //             hsla(281, 100%, 31%, 1) 0%,
-    //             hsla(280, 44%, 48%, 1) 50%,
-    //             hsla(282, 100%, 11%, 1) 100%);
-    
-    //     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6B009C", endColorstr="#8D44B1", GradientType=1);
-
-        display: flex;
-        flex-direction: column;
-
-}
-
-.hero-section{
-    background-image: url(../../../dist/assets/bg-0002-free-img.jpg);
+ .landing-container{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-
-    .hero-section-header{
-        h1{
-            color: var(--text-color);
-            font-size: 110px;
-            font-weight: 700;
-            letter-spacing: normal;
-        }
-    }
-    .hero-section-text{
-        width: 150px;
-
-        p{
-            color: var(--secondary-text-color);
-        }
-    }
-    .hero-section-span{
-        width: 10%;
-        span{
-            display: block;
-            width: 100%;
-            // border-bottom: 1px solid #000;
-            background-color: var(--text-color);
-        }
-    }
+    flex-direction: column;
 }
 
 .cards-section{

@@ -1,158 +1,60 @@
-import React, { useState, useEffect } from "react";
-import { Controller, Scene } from "react-scrollmagic";
-import { Tween, Timeline } from "react-gsap";
-import {
-  Link,
-  NavLink,
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import styles from "./ResNavbarStyle.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import MobileNav from "./MobileNav";
-library.add(fab);
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { CiMenuFries } from "react-icons/ci";
+import "./ResNavbarStyle.scss";
+import FourthButton from "../Buttons/Btn-4/FourthButton";
 
-export const ReactNavbar = ({ color, logo, menu, social, sticky }) => {
-  const [navLinks, setNavLinks] = useState([
-    { name: "HOME", to: "/" },
-    { name: "ARTICLES", to: "/articles" },
-    { name: "ABOUT ME", to: "/about" },
-    { name: "CONTACT", to: "/contact" },
-  ]);
-  const [socialIcon, setSocialIcon] = useState([
-    {
-      name: "Linkedin",
-      url: "https://www.linkedin.com/in/nazeh-taha/",
-      icon: ["fab", "linkedin-in"],
-    },
-    {
-      name: "Facebook",
-      url: "https://www.facebook.com/nazeh200/",
-      icon: ["fab", "facebook-f"],
-    },
-    {
-      name: "Instagram",
-      url: "https://www.instagram.com/nazeh_taha/",
-      icon: ["fab", "instagram"],
-    },
-    {
-      name: "Twitter",
-      url: "http://nazehtaha.herokuapp.com/",
-      icon: ["fab", "twitter"],
-    },
-  ]);
-  const [background, setBackground] = useState("rgb(25, 25, 25)");
-  const [logoUrl, setLogoUrl] = useState("https://svgshare.com/i/KHh.svg");
-  const [width, setWidth] = useState(window.innerWidth);
-  const updateWidthAndHeight = () => {
-    setWidth(window.innerWidth);
+const ResNavbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
   };
-  useEffect(() => {
-    menu ? setNavLinks(menu) : [];
-    color ? setBackground(color) : null;
-    logo ? setLogoUrl(logo) : null;
-    social ? setSocialIcon(social) : [];
-  }, []);
-  useEffect(() => {
-    window.addEventListener("resize", updateWidthAndHeight);
-    return () => window.removeEventListener("resize", updateWidthAndHeight);
-  });
-
-  if (width < 1150) {
-    return (
-      <MobileNav
-        width={width}
-        logoUrl={logoUrl}
-        background={background}
-        navLinks={navLinks}
-        socialIcon={socialIcon}
-        sticky={sticky}
-      />
-    );
-  }
-
-  const Error = () => <h1>Please pass the component in the menu prop</h1>;
 
   return (
-    <div style={{ minHeight: "100vh", width: "100%" }}>
-      <Router>
-        <Controller>
-          <Scene triggerHook="onLeave" duration={300} pin>
-            {(progress) => (
-              <Timeline totalProgress={progress} paused>
-                <Tween
-                  from={{ height: "150px" }}
-                  to={{ height: "80px", background: background }}
-                >
-                  <div className={styles.header}>
-                    <div className={styles.navLogo}>
-                      <Link to="/">
-                        <div className="logo-container">
-                          <Timeline totalProgress={progress} paused>
-                            <Tween
-                              from={{ height: "150px" }}
-                              to={{ height: "70px" }}
-                            >
-                              <img
-                                className={styles.LogoImg}
-                                src={logoUrl}
-                                alt="logo"
-                              />
-                            </Tween>
-                          </Timeline>
-                        </div>
-                      </Link>
-                    </div>
+    <nav className="res-navbar">
+      <div className="nav-container">
+        <div className="res-nav-logo">
+          <img src="../../../dist/assets/logo-png.png" />
+        </div>
 
-                    <div className={styles.navLinks}>
-                      <ul>
-                        {navLinks.map((link, i) => (
-                          <li key={i}>
-                            <NavLink
-                              exact
-                              to={link.to}
-                              activeClassName={styles.home}
-                            >
-                              {link.name}
-                            </NavLink>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className={styles.navSocial}>
-                      <ul>
-                        {socialIcon.map((icon, i) => (
-                          <li key={i}>
-                            <a target="_blank" href={icon.url}>
-                              <FontAwesomeIcon icon={icon.icon} />
-                            </a>
-                            <span className={styles.tooltiptext}>
-                              {icon.name}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </Tween>
-              </Timeline>
-            )}
-          </Scene>
-        </Controller>
-        <Switch>
-          {navLinks.map((link, i) => (
-            <Route
-              key={i}
-              exact
-              path={link.to}
-              component={link.component ? link.component : Error}
-            />
-          ))}
-        </Switch>
-      </Router>
-    </div>
+        <div className={`nav-elements  ${showNavbar && "active"}`}>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/offers">Offers</a>
+            </li>
+            <li>
+              <a href="/work">Work</a>
+            </li>
+            <li>
+              <a href="/services">Services</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+        <div className={`res-contact-btn ${showNavbar && "active"}`}>
+          <FourthButton title={"TALK TO US"} link={"/contact"} />
+          {/* <a href="/contact" className="res-btn res-btn-1">
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%" />
+            </svg>
+            CONTACT US
+          </a> */}
+        </div>
+        <div className="menu-icon" onClick={handleShowNavbar}>
+          <CiMenuFries color="white" />
+        </div>
+      </div>
+    </nav>
   );
 };
+
+export default ResNavbar;

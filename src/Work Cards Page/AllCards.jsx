@@ -2,7 +2,6 @@ import { HiArrowSmUp } from "react-icons/hi";
 import FourthButton from "../components/Buttons/Btn-4/FourthButton";
 import "./WorkCards.scss";
 import { Link } from "react-router-dom";
-import { color } from "framer-motion";
 function AllCards({ img, title, description, numbers, CardLink }) {
   return (
     <Link to={CardLink}>
@@ -14,7 +13,7 @@ function AllCards({ img, title, description, numbers, CardLink }) {
           <div className="work-cards-title">
             <h1>{title}</h1>
             <Link className="work-link">
-              How Practical Solution boosted {title} Fashion brand ROAS and
+              How Practical Solution boosted {title} brand ROAS and
               decreased CPA significantly
             </Link>
           </div>

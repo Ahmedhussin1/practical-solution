@@ -6,60 +6,41 @@ import HorizantalCardData from "../../Data/HorizontalCardData";
 import GridCard from "../../components/Cards/LandingPageCards/GirdCards/GridCard";
 import MainHeader from "../../components/Headers/MainHeader/MainHeader";
 import ContactUsBanner from "../../components/Contact us Banner/ContactUsBanner";
+import LandingHero from "./LandingPageComponents/LandingHero";
 
 function LandingPage() {
-  const card1 = {
-    // author: "John Doe",
-    // date: "Aug. 24, 2015",
-    tags: ["Learn", "Code", "HTML", "CSS"],
-    title: "Social Media Marketing",
-    subtitle:
-      "Elevate your brand with our Social Media Marketing. Boost eCommerce sales and foster customer loyalty through tailored strategies.",
-    content:
-      "Amplify your brand's visibility with our Social Media Marketing expertise. We craft compelling campaigns to boost eCommerce sales, foster customer loyalty, and elevate your online presence. Transform your digital strategy with our tailored social media solutions.",
-    imageUrl: "../../../dist/assets/pexels-pixabay-265087.jpg",
-    alt: false,
-    btnTitle: "Learn More",
-  };
+  // const card1 = {
+  //   // author: "John Doe",
+  //   // date: "Aug. 24, 2015",
+  //   tags: ["Learn", "Code", "HTML", "CSS"],
+  //   title: "Social Media Marketing",
+  //   subtitle:
+  //     "Elevate your brand with our Social Media Marketing. Boost eCommerce sales and foster customer loyalty through tailored strategies.",
+  //   content:
+  //     "Amplify your brand's visibility with our Social Media Marketing expertise. We craft compelling campaigns to boost eCommerce sales, foster customer loyalty, and elevate your online presence. Transform your digital strategy with our tailored social media solutions.",
+  //   imageUrl: "../../../dist/assets/pexels-pixabay-265087.jpg",
+  //   alt: false,
+  //   btnTitle: "Learn More",
+  // };
 
-  const card2 = {
-    author: "Jane Doe",
-    date: "July. 15, 2015",
-    tags: ["Learn", "Code", "JavaScript"],
-    title: "Mastering the Language",
-    subtitle: "Java is not the same as JavaScript",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.",
-    imageUrl:
-      "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg",
-    alt: true,
-    btnTitle: "Learn More",
-  };
+  // const card2 = {
+  //   author: "Jane Doe",
+  //   date: "July. 15, 2015",
+  //   tags: ["Learn", "Code", "JavaScript"],
+  //   title: "Mastering the Language",
+  //   subtitle: "Java is not the same as JavaScript",
+  //   content:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.",
+  //   imageUrl:
+  //     "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg",
+  //   alt: true,
+  //   btnTitle: "Learn More",
+  // };
 
   return (
     <div className="landing-container">
       {/* hero section */}
-      <div className="hero-section">
-        <div className="hero-section-span">
-          {" "}
-          <span></span>
-        </div>
-        <div className="hero-section-header">
-          <h1>
-            creative &
-            <br />
-            Innovation
-            <br />
-            Ideas
-          </h1>
-        </div>
-        <div className="hero-section-text">
-          <p>
-            Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas
-            JAMES OLIVE
-          </p>
-        </div>
-      </div>
+      <LandingHero/>
 
       {/* cards div */}
       <div className="cards-section">

@@ -8,7 +8,7 @@ function ContactUsBanner() {
           Ready to kick off your
           <br /> growth journey? 🚀
         </h1>
-        <FourthButton title={'TALK TO US'} link={'/contact-us'}/>
+        <FourthButton title={'TALK TO US'} link={'/contact'}/>
       </div>
     </div>
   );

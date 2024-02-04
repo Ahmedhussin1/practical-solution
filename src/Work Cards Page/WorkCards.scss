@@ -100,16 +100,23 @@ hr{
 /* Media queries for tablet view */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
     .all-work-cards-container {
-        padding: 0 40px;
+        margin: 0 auto;
+        width: 400px;
         /* Adjust padding for tablet screens */
     }
 
     .all-work-page-title {
+        max-width: 400px;
         font-size: 36px;
         /* Adjust font size for tablet screens */
         padding: 30px 20px;
         /* Adjust padding for tablet screens */
     }
+        .work-cards-grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 500px;
+        }
 
     .work-cards-img {
         height: 180px;
@@ -147,17 +154,23 @@ hr{
 /* Media queries for mobile view */
 @media only screen and (max-width: 599px) {
     .all-work-cards-container {
-        padding: 0 20px;
+        margin: 0 auto;
+            width: 300px;
         /* Adjust padding for mobile screens */
     }
 
     .all-work-page-title {
+        max-width: 400px;
         font-size: 24px;
         /* Adjust font size for mobile screens */
         padding: 20px 10px;
         /* Adjust padding for mobile screens */
     }
-
+.work-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 500px;
+}
     .work-cards-img {
         height: 150px;
         /* Adjust height for mobile screens */

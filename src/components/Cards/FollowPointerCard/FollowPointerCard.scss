@@ -1,0 +1,43 @@
+// TiltCard.scss
+
+.tilt-card-container {
+    perspective: 1000px;
+    height: 24rem;
+    width: 18rem;
+    position: relative;
+
+    &:hover .tilt-card {
+        transform: rotateY(17.5deg) rotateX(17.5deg);
+    }
+
+    .card {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom right, #667eea, #764ba2);
+        border-radius: 1rem;
+        display: grid;
+        place-content: center;
+
+        .content {
+            transform: translateZ(75px);
+            transform-style: preserve-3d;
+            position: absolute;
+            inset: 1rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            .mouse-pointer {
+                transform: translateZ(75px);
+                font-size: 2rem;
+            }
+
+            .hover-text {
+                transform: translateZ(50px);
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}

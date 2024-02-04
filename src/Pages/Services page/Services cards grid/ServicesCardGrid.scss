@@ -75,3 +75,41 @@
     background-color: transparent;
     /* Color of the circle */
 }
+@media only screen and (max-width: 768px) {
+    .services-grid-cards-container {
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        row-gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .services-card-grid-container {
+        margin-bottom: 50px;
+        padding: 40px;
+    }
+
+    .circle,
+    .line {
+        width: 10px;
+        &:not(:last-child) {
+                margin-right: 4px;
+                /* Adjust spacing between circle and line */
+            }
+    }
+    .line{
+        width: 300px;
+    }
+    .our-services{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .services-card-grid-header h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .services-card-grid-desc p {
+        font-size: 16px;
+    }
+}

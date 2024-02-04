@@ -33,3 +33,26 @@
         color: var(--secondary-text-color);
     }
 }
+@media only screen and (max-width: 768px) {
+    .services-page-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .services-header-section {
+        min-height: auto;
+        margin: 100px 0;
+    }
+
+    .services-header-title h1 {
+        font-size: 32px;
+    }
+
+    .services-header-subtitle h2 {
+        font-size: 16px;
+    }
+
+    .services-header-desc p {
+        font-size: 16px;
+    }
+}

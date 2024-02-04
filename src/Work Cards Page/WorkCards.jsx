@@ -1,3 +1,4 @@
+import ContactUsBanner from "../components/Contact us Banner/ContactUsBanner";
 import AllCards from "./AllCards";
 import "./WorkCards.scss";
 import WorkCardData from "./WorkCardsData";
@@ -18,6 +19,7 @@ function WorkCards() {
           />
         ))}
       </div>
+      <ContactUsBanner/>
     </div>
   );
 }
